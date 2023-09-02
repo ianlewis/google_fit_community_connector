@@ -1,0 +1,26 @@
+{
+  "description": "Looker Studio Community Connector For Google Fit",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write '**/*.ts' '**/*.js'",
+    "format-check": "prettier --check '**/*.ts' '**/*.js'",
+    "package": "ncc build --external encoding --source-map",
+    "lint": "eslint --max-warnings 0 src/**/*.ts src/**/*.js",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "18.16.18",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "@vercel/ncc": "0.36.1",
+    "eslint": "8.46.0",
+    "eslint-plugin-github": "4.9.1",
+    "eslint-plugin-prettier": "5.0.0",
+    "prettier": "3.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "5.1.6"
+  }
+}

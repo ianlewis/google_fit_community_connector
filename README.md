@@ -1,4 +1,6 @@
-# Google Fit Community Connector for Data Studio
+# Google Fit Community Connector for Looker Studio
+
+\_
 
 _This is not an official Google product_
 
@@ -22,19 +24,19 @@ data.
 
 ## Set up the Community Connector for personal use
 
-To use this Community Connector in Data Studio there is a one-time setup to
+To use this Community Connector in Looker Studio there is a one-time setup to
 deploy your own personal instance of the connector using Apps Script.
 
 ### Deploy the connector
 
 Follow the [deployment guide] to deploy the Community Connector.
 
-## Using the connector in Data Studio
+## Using the connector in Looker Studio
 
 Once you've set up and deployed the connector, follow the
-[Use a Community Connector] guide to use the connector in Data Studio.
+[Use a Community Connector] guide to use the connector in Looker Studio.
 
-**Note**: After using the connector in Data Studio, as long as you do not
+**Note**: After using the connector in Looker Studio, as long as you do not
 [revoke access], it will remain listed in the [connector list] for easy access
 when [creating a new data source].
 
