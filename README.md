@@ -1,6 +1,6 @@
 # Google Fit Community Connector for Looker Studio
 
-\_
+_This is still a work in progress. The connector needs to be updated to work with Looker Studio._
 
 _This is not an official Google product_
 
