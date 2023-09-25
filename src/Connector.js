@@ -15,8 +15,13 @@ limitations under the License.
 */
 
 /**
- * Returns a configuration object for the connector. DataStudio uses this to set up the connector.
- * TODO: Rewrite in TypeScript.
+ * getSchema returns a configuration object for the connector. DataStudio uses this to set up the connector.
+ *
+ * @TODO: Activity DataType
+ * @TODO: Steps DataType
+ * @TODO: Weight DataType
+ * @TODO: HeartRate DataType
+ * @TODO: HeartRateDaily DataType
  *
  * @param {Object} request - the schema request
  * @return {Object} A JavaScript object representing the schema for the given request.
@@ -38,7 +43,6 @@ function getSchema(request) {
 
 /**
  * Functions to create schema for slected config params data type
- * TODO: Rewrite in TypeScript.
  *
  * @return {Object} A JavaScript object representing the schema
  */
@@ -234,18 +238,18 @@ function getConfig(request) {
     .setHelpText("Enter the type of data you want to get from Google Fit.")
     .setAllowOverride(true)
     .addOption(
-      config.newOptionBuilder().setLabel("Activity").setValue("activity")
+      config.newOptionBuilder().setLabel("Activity").setValue("activity"),
     )
     .addOption(config.newOptionBuilder().setLabel("Steps").setValue("steps"))
     .addOption(config.newOptionBuilder().setLabel("Weight").setValue("weight"))
     .addOption(
-      config.newOptionBuilder().setLabel("Heart Rate").setValue("heart_rate")
+      config.newOptionBuilder().setLabel("Heart Rate").setValue("heart_rate"),
     )
     .addOption(
       config
         .newOptionBuilder()
         .setLabel("Heart Rate Daily")
-        .setValue("heart_rate_daily")
+        .setValue("heart_rate_daily"),
     );
   config.setDateRangeRequired(true);
   return config.build();
