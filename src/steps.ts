@@ -16,7 +16,7 @@ import DataType from "./datatype";
 
 // TODO: imports
 
-class Steps implements DataType {
+export class Steps implements DataType {
   getSchema(cc: CommunityConnector): GetSchemaResponse {
     var fields = cc.getFields();
     var types = cc.FieldType;
