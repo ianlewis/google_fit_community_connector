@@ -583,7 +583,7 @@ function getDataDailyHeartRate(request, fit, startDate, endDate) {
 
 /**
  * Used by DataStudio to get the authorization type used by this connector.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @return {AuthType} an object representing the auth type.
  */

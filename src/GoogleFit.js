@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 /**
- * TODO: Write docs.
- * TODO: Rewrite in TypeScript.
+ * TODO(#5): Write docs.
+ * TODO(#1): Rewrite in TypeScript.
  */
 function GoogleFit() {
   this.config = {};
@@ -153,7 +153,7 @@ function GoogleFit() {
 
 /**
  * Gets the description for the activity given the activity ID.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @param {number} The activity ID
  * @return {string} The activity description
@@ -164,7 +164,7 @@ GoogleFit.prototype.getActivityDescription = function (id) {
 
 /**
  * Gets activity for the signed in user during the given time period.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @param{Date} startTime the start time for the period to get activity
  * @param{Date} endTime the end time for the period to get activity
@@ -180,7 +180,7 @@ GoogleFit.prototype.getActivity = function (startTime, endTime) {
 
 /**
  * Gets steps for the signed in user during the given time period.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @param{Date} startTime the start time for the period to get steps
  * @param{Date} endTime the end time for the period to get steps
@@ -196,7 +196,7 @@ GoogleFit.prototype.getSteps = function (startTime, endTime) {
 
 /**
  * Gets weight for the signed in user during the given time period.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @param{Date} startTime the start time for the period to get weight
  * @param{Date} endTime the end time for the period to get weight
@@ -212,7 +212,7 @@ GoogleFit.prototype.getWeight = function (startTime, endTime) {
 
 /**
  * Gets heart rate for the signed in user during the given time period.
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * @param{Date} startTime the start time for the period to get weight
  * @param{Date} endTime the end time for the period to get weight
@@ -227,8 +227,8 @@ GoogleFit.prototype.getHeartRate = function (startTime, endTime) {
 };
 
 /**
- * TODO: write docs
- * TODO: Rewrite in TypeScript.
+ * TODO(#5): write docs
+ * TODO(#1): Rewrite in TypeScript.
  */
 GoogleFit.prototype.getHeartRateDaily = function (startTime, endTime) {
   return getAggregateData(
@@ -242,8 +242,8 @@ var ninetyDaysMs = 90 * 24 * 60 * 60 * 1000;
 var oneDayMs = 24 * 60 * 60 * 1000;
 
 /**
- * TODO: write docs
- * TODO: Rewrite in TypeScript.
+ * TODO(#5): write docs
+ * TODO(#1): Rewrite in TypeScript.
  */
 function fetchAggregateData(dataSourceId, startTimeMs, endTimeMs) {
   try {
@@ -275,8 +275,8 @@ function fetchAggregateData(dataSourceId, startTimeMs, endTimeMs) {
 }
 
 /**
- * TODO: write docs
- * TODO: Rewrite in TypeScript.
+ * TODO(#5): write docs
+ * TODO(#1): Rewrite in TypeScript.
  */
 function getAggregateData(dataSourceId, startTimeMs, endTimeMs) {
   var localEndTimeMs =
@@ -295,13 +295,13 @@ function getAggregateData(dataSourceId, startTimeMs, endTimeMs) {
 
 /**
  * Gets a dataset via the Google Fit API. If successful it returns a
- * TODO: Rewrite in TypeScript.
+ * TODO(#1): Rewrite in TypeScript.
  *
  * Users.dataSources.datasets resource.
  * @see {@link https://developers.google.com/fit/rest/v1/reference/users/dataSources/datasets Users.dataSources.datasets Resource}
- */
+ */(#1)
 GoogleFit.prototype._getDatasets = function (dataSource, startTime, endTime) {
-  // TODO: Implement paging using pageToken
+  // TODO(#4): Implement paging using pageToken
   //       See: https://developers.google.com/fit/rest/v1/reference/users/dataSources/datasets/get
 
   // The Google Fit API takes timestamps in nanoseconds so we must convert milliseconds
