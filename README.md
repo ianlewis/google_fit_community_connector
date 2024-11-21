@@ -50,12 +50,12 @@ proceed.
 
 ## Developer examples covered in the connector
 
-- **Logging**  
+- **Logging**
   Example of using a global flag to toggle logging and also [logging method
   parameters and output to Stackdriver][_cc logging].
-- **Defining a namespace**  
+- **Defining a namespace**
   Example of [Defining a namespace][_js namespace] for your connector.
-- **Using the sampleExtraction property**  
+- **Using the sampleExtraction property**
   Example of returning pre-defined sample data-set for more efficient
   `getData()` queries when sampleExtraction is `true`. Learn more about
   [sampleExtraction][_sample extraction].
