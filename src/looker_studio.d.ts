@@ -20,12 +20,13 @@ interface ConfigParams {
   [configId: string]: string;
 }
 
-interface GetSchemaRequest {
+interface GetConfigRequest {
   configParams: ConfigParams;
+  languageCode: string;
 }
 
-interface GetSchemaResponse {
-  schema: Object[];
+interface GetSchemaRequest {
+  configParams: ConfigParams;
 }
 
 interface GetDataRequest {
@@ -48,11 +49,6 @@ interface GetDataRow {
   values: Array<GetDataRowValue>;
 }
 type GetDataRows = Array<GetDataRow>;
-
-interface GetDataResponse {
-  schema: Object[];
-  rows: GetDataRows;
-}
 
 // TODO: use @types/google-apps-script
 // https://developers.google.com/apps-script/guides/typescript
