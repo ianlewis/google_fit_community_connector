@@ -68,10 +68,6 @@ format: node_modules/.installed ## Formats code.
 unit-test: node_modules/.installed ## Runs all unit tests.
 	npm run test
 
-.PHONY: lint
-lint: node_modules/.installed ## Runs eslint.
-	npm run lint
-
 ## Tools
 #####################################################################
 
@@ -170,3 +166,9 @@ yamllint: ## Runs the yamllint linter.
 			extraargs="-f github"; \
 		fi; \
 		yamllint --strict -c .yamllint.yaml $${extraargs} $${files}
+
+.PHONY: lint
+eslint: node_modules/.installed ## Runs eslint.
+	npm run lint
+
+

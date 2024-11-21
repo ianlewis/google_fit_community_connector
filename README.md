@@ -1,8 +1,8 @@
 # Google Fit Community Connector for Looker Studio
 
-_This is still a work in progress. The connector needs to be updated to work with Looker Studio._
+> This is still a work in progress. The connector needs to be updated to work with Looker Studio.
 
-_This is not an official Google product_
+> This is not an official Google product
 
 This [Looker Studio] [Community Connector] lets users query [Google Fit] for
 fitness data.
