@@ -1,8 +1,12 @@
 # Google Fit Community Connector for Looker Studio
 
-> This is still a work in progress. The connector needs to be updated to work with Looker Studio.
-
-> This is not an official Google product
+> Per Google, the Google Fit APIs, including the Google Fit REST API, will no
+> longer be available after June 30, 2025. As of May 1, 2024, developers cannot
+> sign up to use these APIs.
+>
+> The replacement API, Health Connect, is an Android-only API and will not have
+> a REST API to replace the Google Fit REST API. As such, this project will not
+> have an API to use going forward and is archived.
 
 This [Looker Studio] [Community Connector] lets users query [Google Fit] for
 fitness data.
